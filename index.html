@@ -1,11 +1,164 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Coming Soon</title>
+<title>Now Hiring!</title>
 <link rel="icon" href="https://utat-hire.github.io/web-icon.ico" type="image/x-icon">
+<style>html,body{background-color: #000};</style>
+<style>@font-face {
+   font-family: dt-font;
+   src: url('https://kayos156.github.io/css/fonts/dtm-sans-webfont.woff2') format('woff2'),
+         url('https://kayos156.github.io/css/fonts/dtm-sans-webfont.woff') format('woff');
+}
+
+body {
+   font-family: dt-font;
+    color: white;</style>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
 </head>
 <body>
-<p>This page is still being worked on.</p>
-<p>Play some Undertale, or something while you wait.</p>
+<h2>Now Hiring!</h2>
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.First_Name.value == "") {alert('First name is required.');frm.First_Name.focus();return false;}
+if (frm.Last_Name.value == "") {alert('Last name is required.');frm.Last_Name.focus();return false;}
+if (frm.Email_Address.value == "") {alert('Email address is required.');frm.Email_Address.focus();return false;}
+if (frm.Email_Address.value.indexOf("@") < 1 || frm.Email_Address.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.Email_Address.focus();return false;}
+if (frm.Position.value == "") {alert('Position is required.');frm.Position.focus();return false;}
+if (frm.skip_CaptchaCode.value == "") {alert('Enter security code.');frm.skip_CaptchaCode.focus();return false;}
+return true; }
+function ReloadCaptchaImage(captchaImageId) {
+var obj = document.getElementById(captchaImageId);
+var src = '' + obj.src;
+obj.src = '';
+var date = new Date();
+var pos = src.indexOf('&rad=');
+if (pos >= 0) { src = src.substr(0, pos); }
+obj.src = src + '&rad=' + date.getTime();
+return false; }
+</script>
+<hr />
+<form action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+<input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="hire4UTAT@outlook.com" />
+<input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="6YM7GPJNGEK3" />
+<input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="/ThankYouPage.html" />
+<input id="skip_Subject" name="skip_Subject" type="hidden" value="Employment Application" />
+<input id="skip_ShowUsersIp" name="skip_ShowUsersIp" type="hidden" value="1" />
+<input id="skip_SendCopyToUser" name="skip_SendCopyToUser" type="hidden" value="1" />
+<table border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td style="width:50%">
+<b>First name <span style="color: #FF0000;">*</span></b><br />
+<input name="First_Name" type="text" maxlength="50" style="width:260px" />
+</td>
+<td style="width:50%">
+<b>Last name <span style="color: #FF0000;">*</span></b><br />
+<input name="Last_Name" type="text" maxlength="50" style="width:260px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Email <span style="color: #FF0000;">*</span></b><br />
+<input name="Email_Address" type="text" maxlength="100" style="width:535px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Portfolio website</b><br />
+<input name="Portfolio" type="text" maxlength="255" value="http://" style="width:535px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="tooltip"><b>Position you are applying for <span style="color: #FF0000;">*</span></b>
+<span class="tooltiptext">Coding, Character Design, Story, Sprites</span></div><br />
+<input name="Position" type="text" maxlength="100" style="width:535px" />
+</td>
+</tr>
+<tr>
+<td style="width:50%">
+<b>When can you start?</b><br />
+<input name="StartDate" type="text" maxlength="50" style="width:260px" />
+</td>
+</tr>
+<tr>
+<td style="width:50%">
+<b>Phone</b><br />
+<input name="Phone" type="text" maxlength="50" style="width:260px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>This is a not-for-profit passion project, meaning it's a no pay job, are you okay with this?</b><br />
+<input name="Relocate" type="radio" value="Yes"/><b>Yes &nbsp; &nbsp; &nbsp;</b>
+<input name="Relocate" type="radio" value="No" checked="checked" /><b> No &nbsp; &nbsp; &nbsp;</b>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Last project you worked on</b><br />
+<input name="Organization" type="text" maxlength="100" style="width:535px" />
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<b>Reference / Comments / Questions</b><br />
+<textarea name="Reference" rows="7" cols="40" style="width:535px"></textarea>
+</td>
+</tr>
+</table>
+<br />
+<div style="text-align:center;">
+<table border="0" cellpadding="0" cellspacing="0" style="text-align:center; width:300px; margin:auto;">
+<tr><td colspan="2" style="padding-bottom:18px;">
+<!-- Please check our ProCaptcha service which is ad-free:
+https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+
+<a href="http://www.snaphost.com/captcha/CaptchaNewswriter.aspx" alt="Newsletter Subscription Form" title="Newsletter Subscription Form">
+<span style="color: #FFFF00;">Newsletter Subscription Form</span></a></td></tr>
+<tr>
+<td>Enter Security Code</td>
+<td>SECURITY CODE</td>
+</tr>
+<tr>
+<td>
+<input name="skip_CaptchaCode" type="text" maxlength="6"
+style="width:130px; height:28px; font-size:24px; text-align:center;" />
+</td>
+<td>
+<a href="https://www.snaphost.com/captcha/ReadyForms/EmploymentApplicationForm.aspx"><img id="CaptchaImage" alt="Employment Application Form" title="HTML code for Employment Application Web Form"
+style="margin-left:20px; border:1px solid #999999;"
+src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=6YM7GPJNGEK3&ImgType=2" /></a>
+<br /><a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="color: #FFFF00;"><span style="font-size:12px;">Reload Image</span></span></a>
+</td>
+</tr>
+</table>
+<br /><br />
+<input name="skip_Submit" type="submit" value="Send Application" />
+</div>
+</form>
 </body>
 </html>
